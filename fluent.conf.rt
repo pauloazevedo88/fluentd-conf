@@ -14,7 +14,7 @@
 <match jfrog.metrics.**>
   @type jfrog_send_metrics
   target_platform "DATADOG"
-  apikey "{ENV['DATADOG_API_KEY']}"
+  apikey "ENV['DATADOG_API_KEY']"
   url "https://api.datadoghq.eu/api/v2/series"
 </match>
 # ALL CALLHOME
@@ -361,7 +361,7 @@
   <match jfrog.**>
     @type datadog
     @id jfrog_artifactory
-    api_key "d03b279f7eff8246d5cb42c72fcd71c4"
+    api_key "ENV['DATADOG_API_KEY']"
     #optional
     include_tag_key true
     dd_source jfrog_platform
