@@ -8,7 +8,7 @@
   jpd_url "https://artifactory.euc1.alpha.cicd.oneweb.mercedes-benz.com/"
   username "admin"
   token "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJCZ01SVlVEeVA3WGZuV0Y2WVlZeW9qWjNSRFk3TE0zekZEelVOdnZ3OUJZIn0.eyJzdWIiOiJqZmFjQDAxaDY5MzU0eGo1OGtlMXcyN25kZTMwd3BrL3VzZXJzL2FkbWluIiwic2NwIjoiYXBwbGllZC1wZXJtaXNzaW9ucy9hZG1pbiIsImF1ZCI6IipAKiIsImlzcyI6ImpmZmVAMDFoNjkzNTR4ajU4a2UxdzI3bmRlMzB3cGsiLCJpYXQiOjE2OTAzODEzMzUsImp0aSI6IjZhNDY0YzY0LTM3NzItNDc1Zi1hOTc0LTUyMWEwMjk0MzdiMSJ9.D8oQZywmfoM0mkFA866zbaImqw5ZEJgA5a2NmiUZKAmqpmKh5t15_2gdonSPduM_RckpalRysGQ5ph_gs6dfq2oF0bhPIqNSXpJx7_81xSZPng92w98QtzDsbyxXu--wWQz_u-p7HWnId8Cz7KGG5Uu4L73PDSJze6DUF1wO3m4B3NMQ72DgPOCIExdpWFp-IQfFEh9PImFrcQ5U3lJPJu1IAplJXedIm84u9L9kCal0ApOZRcYg6ywAmI5oDOYJxSLq86MT5AKSC4YselhjfkSd4gt8d6utTN_dyWPCEwu6c3-p-EGcKRE5F5GqeFoAvOXvvc8s9XaJv9-hIL_tfg"
-  common_jpd "https://artifactory.euc1.alpha.cicd.oneweb.mercedes-benz.com/artifactory"
+  # common_jpd "https://artifactory.euc1.alpha.cicd.oneweb.mercedes-benz.com/artifactory"
   target_platform "DATADOG"
 </source>
 <match jfrog.metrics.**>
