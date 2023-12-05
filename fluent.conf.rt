@@ -106,8 +106,8 @@ data:
     <source>
       @type tail
       @id access_service_tail
-      path "/opt/jfrog/router/var/log/access-service.log"
-      pos_file "/opt/jfrog/router/var/log/access-service.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-service.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-service.log.pos"
       tag jfrog.rt.access.service
       <parse>
         @type none
@@ -116,8 +116,8 @@ data:
     <source>
       @type tail
       @id artifactory_service_tail
-      path "/opt/jfrog/router/var/log/artifactory-service.log"
-      pos_file "/opt/jfrog/router/var/log/artifactory-service.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-service.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-service.log.pos"
       tag jfrog.rt.artifactory.service
       <parse>
         @type none
@@ -126,8 +126,8 @@ data:
     <source>
       @type tail
       @id metadata_service_tail
-      path "/opt/jfrog/router/var/log/metadata-service.log"
-      pos_file "/opt/jfrog/router/var/log/metadata-service.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/metadata-service.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/metadata-service.log.pos"
       tag jfrog.rt.metadata.service
       <parse>
         @type none
@@ -136,8 +136,8 @@ data:
     <source>
       @type tail
       @id router_service_tail
-      path "/opt/jfrog/router/var/log/router-service.log"
-      pos_file "/opt/jfrog/router/var/log/router-service.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-service.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-service.log.pos"
       tag jfrog.rt.router.service
       <parse>
         @type none
@@ -147,8 +147,8 @@ data:
     <source>
       @type tail
       @id router_traefik_tail
-      path "/opt/jfrog/router/var/log/router-traefik.log"
-      pos_file "/opt/jfrog/router/var/log/router-traefik.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-traefik.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-traefik.log.pos"
       tag jfrog.rt.router.traefik
       <parse>
           @type multiline
@@ -160,8 +160,8 @@ data:
     <source>
       @type tail
       @id access_request_tail
-      path "/opt/jfrog/router/var/log/access-request.log"
-      pos_file "/opt/jfrog/router/var/log/access-request.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-request.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-request.log.pos"
       tag jfrog.rt.access.request
       <parse>
         @type regexp
@@ -172,8 +172,8 @@ data:
     <source>
       @type tail
       @id artifactory_request_tail
-      path "/opt/jfrog/router/var/log/artifactory-request.log"
-      pos_file "/opt/jfrog/router/var/log/artifactory-request.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-request.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-request.log.pos"
       tag jfrog.rt.artifactory.request
       <parse>
         @type none
@@ -182,8 +182,8 @@ data:
     <source>
       @type tail
       @id frontend_request_tail
-      path "/opt/jfrog/router/var/log/frontend-request.log"
-      pos_file "/opt/jfrog/router/var/log/frontend-request.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/frontend-request.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/frontend-request.log.pos"
       tag jfrog.rt.frontend.request
       <parse>
         @type none
@@ -192,8 +192,8 @@ data:
     <source>
       @type tail
       @id metadata_request_tail
-      path "/opt/jfrog/router/var/log/metadata-request.log"
-      pos_file "/opt/jfrog/router/var/log/metadata-request.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/metadata-request.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/metadata-request.log.pos"
       tag jfrog.rt.metadata.request
       <parse>
         @type none
@@ -202,8 +202,8 @@ data:
     <source>
       @type tail
       @id router_request_tail
-      path "/opt/jfrog/router/var/log/router-request.log"
-      pos_file "/opt/jfrog/router/var/log/router-request.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-request.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/router-request.log.pos"
       tag jfrog.rt.router.request
       <parse>
         @type none
@@ -212,8 +212,8 @@ data:
     <source>
       @type tail
       @id artifactory_request_out_tail
-      path "/opt/jfrog/router/var/log/artifactory-request-out.log"
-      pos_file "/opt/jfrog/router/var/log/artifactory-request-out.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-request-out.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-request-out.log.pos"
       tag jfrog.rt.request.out
       read_from_head true
       <parse>
@@ -225,8 +225,8 @@ data:
     <source>
       @type tail
       @id artifactory_access_tail
-      path "/opt/jfrog/router/var/log/artifactory-access.log"
-      pos_file "/opt/jfrog/router/var/log/artifactory-access.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-access.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/artifactory-access.log.pos"
       tag jfrog.rt.artifactory.access
       <parse>
         @type regexp
@@ -237,8 +237,8 @@ data:
     <source>
       @type tail
       @id access_security_audit_tail
-      path "/opt/jfrog/router/var/log/access-security-audit.log"
-      pos_file "/opt/jfrog/router/var/log/access-security-audit.log.pos"
+      path "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-security-audit.log"
+      pos_file "{ENV['JF_PRODUCT_DATA_INTERNAL']}/log/access-security-audit.log.pos"
       tag jfrog.rt.access.audit
       <parse>
         @type regexp
